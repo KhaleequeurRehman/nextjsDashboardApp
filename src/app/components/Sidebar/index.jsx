@@ -44,7 +44,7 @@ const Sidebar = ({ children }) => {
   
   return (
     <div className='flex'>
-      <div className={`fixed w-20 md:w-64 h-screen p-4 bg-white border-r-[1px] border-[#f0f3f6] flex flex-col`}>
+      <div className={`fixed w-20 md:w-64 h-screen p-4 bg-white border-r-[1px] border-[#f0f3f6] hidden sm:flex sm:flex-col`}>
         <Link href="/">
           <div className="my-3 flex gap-3">
             <Image src="/assets/images/logo.png" alt="logo" width={42} height={28} />
@@ -77,7 +77,7 @@ const Sidebar = ({ children }) => {
          }
         </ul>
       </div>
-      <main className={`ml-20 md:ml-64 w-full min-h-screen bg-[#F7FAFD] p-4`}>
+      <main className={`sm:ml-20 md:ml-64 w-full min-h-screen bg-[#F7FAFD] p-4`}>
           {children}
       </main>
     </div>

@@ -183,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-3">
+      <section className="my-10 block sm:hidden">
         {
           Array.isArray(infoListItems2) && infoListItems2.map((item,index) => (
             <InfoListItem2 key={index} imgSrc={item?.imgSrc} name={item?.name} description={item?.description}  icon={item?.icon} />
